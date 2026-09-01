@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+    <!-- css file se font-awesome website se fonts-library ko link krne ke liye -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <!-- main navbar -->
+        <!-- main navbar -->
+        <!-- main navbar -->
+        <div class="navbar">
+            
+            <!-- div of box-1 of navbar -->
+            <div class="nav-logo border" >
+                <div class="logo"></div>
+            </div>
+            
+            <!-- div of box-2 of navbar -->
+            <div class="nav-address border">
+
+                <!-- deliver to -->
+                <p class="deliver_to">Deliver to</p>
+                 
+                <!-- ⚲ and India -->
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>  
+                    <p class="india">India</p>
+                </div>
+
+            </div>
+            
+            <!-- div of box-3 of navbar -->
+            <div class="nav-search">
+                <!-- All -->
+                <select class="search-select">
+                    <option> All </option>
+                </select>
+                
+                <!-- Search-Bar -->
+                <input type="text" placeholder="Search Amazon" class="search-input" id="searchInput">
+                <div class="search-icon" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- div of box-4 of navbar -->
+            <div class="nav-signin border">
+
+                <!-- Hello, sign in -->
+                <p><span>Hello, sign in</span></p>
+
+                <!-- Account & List -->
+                <p class="account_list">Account & List</p>
+            </div>
+
+            <!-- div of box-5 of navbar -->
+            <div class="nav-return border">
+
+                <!-- Returns -->
+                <p><span>Return</span></p>
+
+                <!-- Order -->
+                <p class="account_list">& Orders</p>
+            </div>
+
+            
+            <!-- div of box-6 of navbar -->
+            <div class="nav-cart border" id="cartBtn">
+
+               <!-- cart icon link -->
+               <i class="fa-solid fa-cart-arrow-down"></i>
+
+               <!-- Cart text -->
+               Cart
+               <span id="cartCount" class="cart-count">0</span>
+
+               <!-- cart dropdown, JS iska content items ke hisab se update karega -->
+               <div class="cart-dropdown" id="cartDropdown">
+                   <p class="cart-empty">Your cart is empty</p>
+               </div>
+            </div>
+
+        </div> 
+    
+
+
+
+        <!-- main panelbar/main sub-navbar -->
+        <!-- main panelbar/main sub-navbar -->
+        <!-- main panelbar/main sub-navbar -->
+        <div class="panel">
+
+            <!-- 1st div / 1st box of panel -->
+            <div class="panel-all">
+
+                <!-- hamburger icon -->
+                <i class="fa-solid fa-bars"></i>
+
+                <!-- text only -->
+                All
+            </div>
+            
+            <!-- 2nd div / 2nd box of panel -->
+            <div class="panel-options">
+
+                <!-- 2nd div ke andar ke items -->
+                <p>Today's Deals</p>
+                <p>Prime Video</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+            </div>
+
+            <!-- 3rd div / 3rd box of panel -->
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>         
+    </header>
+
+
+
+
+    <!-- main div of hero-section -->
+    <!-- main div of hero-section -->
+    <!-- main div of hero-section -->
+    <div class="hero-section" id="heroSlider">
+
+        <!-- slider ke andar ke slides, JS in par active class toggle karega -->
+        <!-- har slide ke andar 2 layers hain: (1) blurred background jo poori jagah bharta hai, (2) sharp photo jo kabhi crop nahi hoti -->
+        <div class="hero-slide active">
+            <div class="hero-slide-bg" style="background-image: url('box4_image.jpg');"></div>
+            <div class="hero-slide-fg" style="background-image: url('box4_image.jpg');"></div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-slide-bg" style="background-image: url('box8_image.jpg');"></div>
+            <div class="hero-slide-fg" style="background-image: url('box8_image.jpg');"></div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-slide-bg" style="background-image: url('box5_image.jpg');"></div>
+            <div class="hero-slide-fg" style="background-image: url('box5_image.jpg');"></div>
+        </div>
+
+        <!-- prev/next arrows, JS in par click listener lagayega -->
+        <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">&#10094;</button>
+        <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">&#10095;</button>
+
+        <!-- dots container, JS yahan dot buttons banayega -->
+        <div class="hero-dots" id="heroDots"></div>
+
+        <!-- jo message likha hua hai website par usko div ke duvara likhna -->
+        <div class="hero-msg">
+            <p>
+                You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in <a href="#">Click here to go to Amazon.com</a>
+            </p>
+        </div>
+    </div>
+
+    
+    <!-- shopping section  -->
+    <!-- shopping section  -->
+    <!-- shopping section  -->
+    <div class="shop-section">
+        
+
+        <!-- 1st box ke liye div -->
+        <div class="box" data-category="Clothes">
+
+            <!-- box-1 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-1)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Clothes</h2>
+                    <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd box ke liye div -->
+        <div class="box" data-category="Health & Personal Care">
+
+            <!-- box-2 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-2)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                    <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd box ke liye div -->
+        <div class="box" data-category="Furniture">
+
+            <!-- box-3 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-3)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Furniture</h2>
+                    <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th box ke liye div -->
+        <div class="box" data-category="Electronics">
+
+            <!-- box-4 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-4)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Electronics</h2>
+                    <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5th box ke liye div -->
+        <div class="box" data-category="Beauty Picks">
+
+            <!-- box-5 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-5)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2> Beauty Picks</h2>
+                    <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6th box ke liye div -->
+        <div class="box" data-category="Pet Care">
+
+            <!-- box-6 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-6)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                    <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7th box ke liye div -->
+        <div class="box" data-category="Toys">
+
+            <!-- box-7 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-7)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2> New Arival in Toys</h2>
+                    <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8th box ke liye div -->
+        <div class="box" data-category="Fashion Trends">
+
+            <!-- box-8 ke andar 3 tags hai (h2/image/p)tags unke liye div -->
+            <!-- or image tag (box-8)div ke andar (box-content)div ke andar (box-img)div me hai -->
+            <div class="box-content">
+                <h2>Discover Fashion Trends</h2>
+                    <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <div class="box-actions">
+                    <p class="see-more">See More</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+
+    <!-- footer-section -->
+    <!-- footer-section -->
+    <!-- footer-section -->
+
+
+    <footer>
+
+        <!-- foot-panel-1 -->
+        <!-- foot-panel-1 -->
+
+        <!-- foot-panel-1 ki div-->
+        <div class="foot-panel-1">
+            Back to Top
+        </div>
+
+
+
+        <!-- foot-panel-2 -->
+        <!-- foot-panel-2 -->
+
+        <!-- foot-panel-2 ki div-->
+        <div class="foot-panel-2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>                    
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>> See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+         </div>
+
+        <!-- foot-panel-3 -->
+        <!-- foot-panel-3 -->
+
+
+        <!-- foot-panel-3 ki div-->
+         <div class="foot-panel-3">
+           <div class="logo">
+                <!-- logo ki image lagane ke liye div banai -->
+           </div>
+        </div>
+         
+
+
+        <!-- foot-panel-4 -->
+        <!-- foot-panel-4 -->
+
+
+        <!-- foot-panel-4 ki div-->
+        <div class="foot-panel-4">
+
+            <!-- foot-panel-4 ki 1st div-->
+            <div class="pages">
+
+                <!-- foot-panel-4 ki 1st div ke liye 3 anchor(a) tags-->
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+
+            <!-- foot-panel-4 ki 2nd div-->
+            <div class="copyright">
+                © 1996-2026, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- toast/popup jo "Add to Cart" click hone par dikhta hai, JS is div ka content aur visibility control karta hai -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

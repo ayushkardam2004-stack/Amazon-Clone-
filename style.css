@@ -1,0 +1,610 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+/* black seedha dibba 60px ka header par  */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* box-1 */
+/* navbar ke andar ek or div matlab phla logo(amazon) ke liye */
+.nav-logo {
+    height:50px;
+    width: 100px;
+}
+
+
+/* logo */
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+
+}
+/* logo ka border */
+.border{
+    border: 1.5px solid transparent;
+}
+
+/* logo ke border par hover property lagane ke liye */
+.border:hover {
+    border: 1.5px solid  white;
+}
+
+/* box-2 */
+/* navbar ke andar dusra dibba yani (deliver to india) wala */
+
+/* deliver_to */
+.deliver_to{
+        color: #cccccc;
+        font-size: 0.9rem;
+        align-items: center;
+        margin-left: 20px;
+}
+
+/* india */
+.india {
+        color: #cccccc;
+        font-size: 1rem;
+}
+
+/* location-icon */
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* box-3 */
+/* navbar ke andar teesra dibba yani (search-bar) wala */
+
+/* nav-search div */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: 
+    pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+/* All (select) */
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+/* placeholder(Search Amazon  */
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+/* search-bar me search-icon last me jo hai */
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #fedb68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+
+/* pure search bar div par hover property apply */
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+
+/* box-4  */
+
+/* sign in & Account */
+span{
+    font-size: 0.7rem;
+}
+
+.account_list{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* box-5  */
+
+
+
+
+
+/* box-6 */
+
+/* icon */
+.nav-cart i{
+    font-size: 30px;
+}
+
+/* (Cart) likha hua */
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+
+/* cart-count badge, added for JS cart feature */
+.nav-cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #f08804;
+    color: #0f1111;
+    font-size: 0.7rem;
+    font-weight: 700;
+    min-width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0 3px;
+}
+
+/* cart dropdown panel, hidden by default, JS toggles .open, added for JS cart feature */
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 130%;
+    right: 0;
+    background-color: white;
+    color: #0f1111;
+    width: 230px;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    z-index: 50;
+    font-weight: 400;
+}
+
+.cart-dropdown.open {
+    display: block;
+}
+
+.cart-empty {
+    color: #565959;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cart-item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-top: 4px;
+    border-top: 1px solid #ddd;
+}
+
+/* clickable "See More" text, added for JS filter feature */
+.see-more {
+    cursor: pointer;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+/* box hidden by search filter, added for JS search feature */
+.box.hidden {
+    display: none;
+}
+
+/* brief highlight when a box is filtered/found, added for JS search feature */
+.box.highlight {
+    outline: 3px solid #f08804;
+}
+
+/* shown when search finds no matching category, added for JS search feature */
+.no-results {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: #565959;
+    font-size: 1rem;
+}
+
+/* $$$$$$$$$$$$$$$$44 NAVBAR END $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+/* panel/sub-div flexbox par css*/
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/* panel options me jo p hai unpar css*/
+.panel-options p {
+    display: inline;
+    margin-left: 15px;
+}
+
+
+/* panel options div jo hai us par css */
+.panel-options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+
+/* panel deals wale div par css */
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$ PANELBAR END / SUB-NAVBAR END $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+/* hero-section ke liye div, ab ye slider ka wrapper hai (position relative rakha taaki andar ki slides/arrows/dots absolute position le sakein) */
+.hero-section {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* har slide ka wrapper, sirf fade in/out control karta hai, added for JS slider feature */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* blurred, zoomed-in copy of the same photo — fills every corner so there's never empty space */
+.hero-slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(35px) brightness(0.6);
+    transform: scale(1.15); /* thoda zoom taaki blur ke edges na dikhein */
+}
+
+/* asli sharp photo — "contain" use karte hain isliye ye kabhi upar/neeche se crop nahi hoti, chahe screen ka size kuch bhi ho */
+.hero-slide-fg {
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* prev/next arrow buttons, added for JS slider feature */
+.hero-arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hero-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-prev {
+    left: 15px;
+}
+
+.hero-next {
+    right: 15px;
+}
+
+/* dots niche center me, added for JS slider feature */
+.hero-dots {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.hero-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hero-dot.active {
+    background-color: #f08804;
+}
+
+
+/* hero-section ki div par vo message hai uske liye */
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+/* hero-msg par clickable link ke liye / anchor tag ke liye*/
+.hero-msg a {
+    color: #007185;
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$ HERO-SECTION END $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+/* Main Div */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+/* main div ke andar div (div ki shape box type hai isliye name (.box) hai)) */
+.box {
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+/* .box me image lagane ke liye */
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* .box ke andar jo bhi content hai  */
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #007185;
+}
+
+
+
+/* "See More" aur "Add to Cart" ek row me, button ko right side pe rakhne ke liye, added for JS add-to-cart feature */
+.box-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+/* "Add to Cart" button on each box, added for JS add-to-cart feature */
+.add-to-cart-btn {
+    padding: 8px 14px;
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0f1111;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #f7ca00;
+}
+
+/* toast popup shown after clicking Add to Cart, added for JS add-to-cart feature */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: #0f1111;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$ SHOP-SECTION END $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+/* footer div par css property apply ke liye */
+footer{
+    margin-top: 15px;
+}
+
+
+/* foot-panle/ ya footer me jo foot-panle div banaya hai uspar css property apply ke liye */
+
+/* foot-panel-1 */
+/* foot-panel-1 */
+
+
+/* foot-panel-1 ki div*/
+.foot-panel-1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    font-size: 0.85rem;
+
+    display: flex;            /*  (to make it flexbox) */
+    justify-content: center;  /* (for horizontally)    */
+    align-items: center;      /* (for vertically)      */
+}
+
+
+/* foot-panel-2 */
+/* foot-panel-2 */
+
+/* foot-panel-2 ki div */
+.foot-panel-2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* foot-panel-2 ke p tag ke liye css */
+.foot-panel-2 p{
+    font-weight: 700;
+}
+
+/* foot-panel-2 ke ul tag ke liye css */
+ul{
+    margin-top: 20px;
+}
+
+/* foot-panel-2 ke ul tag ke anchor(a) tag ke liye css */
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+
+
+/* foot-panel-3 */
+/* foot-panel-3 */
+
+
+/* foot-panel-3 ki div */
+.foot-panel-3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* foot-panel-3 ke logo ke liye css */
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+}
+
+
+/* foot-panel-4 */
+/* foot-panel-4 */
+
+
+/* foot-panel-4 ki div */
+.foot-panel-4{
+    height: 75px;
+    background-color: #0f1111;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* foot-panel-4 ki div ke andar ki phli div */
+.pages{
+    padding-top: 25px;
+}
+
+/* foot-panel-4 ki div ke andar ki dusri div */
+.copyright{
+    padding-top: 5px;
+    
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$ FOOTER-SECTION END $$$$$$$$$$$$$$$$$$$$$$$$$$$ */
