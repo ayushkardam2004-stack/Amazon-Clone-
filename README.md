@@ -18,10 +18,6 @@ A front-end clone of Amazon's website built using **HTML, CSS, and JavaScript**,
 - **CSS3** — styling and responsive layout
 - **JavaScript (Vanilla)** — cart logic and DOM manipulation
 
-## 📸 Preview
-
-Add a screenshot or GIF of the app here:
-
 ```
 ![Amazon Clone Screenshot](screenshot.png)
 ```
