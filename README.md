@@ -1,3 +1,9 @@
+## 📸 Screenshot
+
+![Amazon Clone](./screenshot.jpeg)
+
+
+
 # Amazon Clone 🛒
 
 A front-end clone of Amazon's website built using **HTML, CSS, and JavaScript**, featuring product listings and a working shopping cart.
